@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="index.css">
 	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 		body{
 			background-color: rgb(37, 37, 37);
 		}
@@ -13,19 +18,43 @@
 			font-size: 30pt;
 			font-family: Arial, Helvetica, sans-serif;
 			color: white;
+			position: absolute;
+			margin-left: 2rem;
+			margin-top: 2rem;
 		}
 		img{
 			filter: opacity(40%);
 			margin-left: 3.5rem;
+			margin-top: 2rem;
+		}
+		.informacao{
+			width: 360px ;
+			height: 50vh;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 50px;
+			background-color: rgb(97, 48, 3);
+			position: absolute;
+		}
+		span{
+			color: white;
+			letter-spacing: 2px;
+			font-size: 17pt;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			margin-top: 10rem;
+			margin-left: 5rem;
+			display: block;
 		}
 	</style>
 	<title>Matheus Machado</title>
 </head>
 <body>
-	<h1>Olá, eu sou o Matheus</h1>
-	
 	<div class="campo-imagens">
 		<img src="https://seeklogo.com/images/F/Fisioterapia-logo-3981F3002E-seeklogo.com.png" id="imagem-icon">
+	</div>
+	
+	<div class="informacao">
+		<h1>Olá, eu sou o Matheus!</h1>
+		<span>Em construção!</span>
 	</div>
 </body>
 </html>
