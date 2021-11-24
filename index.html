@@ -12,96 +12,186 @@
 			box-sizing: border-box;
 		}
 		body{
-			background-color: rgb(37, 37, 37);
+			background-color: rgb(31, 31, 31);
 		}
-		h1{
-			font-size: 30pt;
+		header{
+			width: 100%;
+			height: 80px;
+			background-color: #ccc;
+			padding-top: 1.5rem;
+		}
+		#title-h2-art{
+			font-size: 20pt;
 			font-family: Arial, Helvetica, sans-serif;
 			color: white;
-			position: absolute;
-			margin-top: -20rem;
-			margin-left: 0.5rem;
+			text-align: center;
+			display: block;
+			margin: 1rem;
 		}
-		h2{
-			font-size: 30pt;
+		#text-h1-header{
 			font-family: Arial, Helvetica, sans-serif;
-			color: white;
-			position: absolute;
-			margin-left: 2rem;
-			margin-top: 2rem;
+			font-size: 20pt;
+			display: block;
+			text-align: center;
 		}
-		img{
-			filter: opacity(40%);
-			margin-left: 3.5rem;
-			margin-top: 2rem;
-		}
-		.informacao{
-			width: 360px ;
-			height: 60vh;
-			border-top-left-radius: 50px;
-			border-top-right-radius: 50px;
-			background-color: rgb(97, 48, 3);
-			position: absolute;
-		}
-		span{
-			color: white;
-			letter-spacing: 2px;
-			font-size: 17pt;
-			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-			margin-top: 10rem;
-			margin-left: 5rem;
+		#title-turmas-span{
+			font-size: 20pt;
+			font-family: Arial, Helvetica, sans-serif;
+			color: rgb(255, 255, 255);
+			margin-left: 1rem;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
 			display: block;
 		}
-		p{
-			font-size: 15pt;
-			font-family: Arial, Helvetica, sans-serif;
-			color: white;
-			margin-left: 2rem;
-			margin-top: 1.5rem;
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			width: 170px;
 		}
-		#img-perfil{
-			width: 110px;
-			height: 150px;
-			filter: none;
-			box-shadow: 0px 0px 10px 3px rgba(107, 107, 107, 0.623);
-			margin-top: -20rem;
-			margin-left: 15rem;
+		ul li{
+			position: relative;
+		}
+
+		li ul {
 			position: absolute;
+			left: 170px;
+			top: 0;
+			display: none;
 		}
-		.png{
-			width: 50px;
+
+		ul li a {
+			display: block;
+			text-decoration: none;
+			color: black;
+			background-color: #ccc;
+			padding: 10px;
+			border: 1px solid #aaa;
 			height: 50px;
+		}
+
+		li:hover ul {
+			display: block;
+		}
+
+		.turmas{
 			margin-top: 2rem;
+			margin-left: 1rem;
 		}
-		#icon-face{
-			margin-left: 10px;
-		}
-		#icon-whats{
-			margin-left: 10px;
-		}
-		#icon-insta{
-			margin-left: 5.5rem;
+
+		.salas-campo{
+			margin-left: 1rem;
+
 		}
 	</style>
-	<title>Matheus Machado</title>
+	<title>Olinda De Paula Magalhães</title>
 </head>
 <body>
-	<div class="campo-imagens">
-		<img src="https://seeklogo.com/images/F/Fisioterapia-logo-3981F3002E-seeklogo.com.png" id="imagem-icon">
+	<header>
+		<h1 class="h1-header" id="text-h1-header">Olinda De Paula Magalhães</h1>
+	</header>
+	<article>
+		<h2 id="title-h2-art">Horarios e Salas</h2>
+	</article>
+	<div class="clases-turmas">
+		<section>
+			<span class="title-clases" id="title-turmas-span">Turmas:</span>
+			<nav>
+				<div class="turmas">
+					<ul>
+						<li><a href="#">Horario 1º ano</a>
+							<ul>
+								<li><a href="#">Horario 1º ano A</a></li>
+								<li><a href="#">Horario 1º ano B</a></li>
+								<li><a href="#">Horario 1º ano C</a></li>
+								<li><a href="#">Horario 1º ano D</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Horario 2º ano</a>
+							<ul>
+								<li><a href="#">Horario 2º ano A</a></li>
+								<li><a href="#">Horario 2º ano B</a></li>
+								<li><a href="#">Horario 2º ano C</a></li>
+								<li><a href="#">Horario 2º ano D</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Horario 3º ano</a>
+							<ul>
+								<li><a href="#">Horario 3º ano A</a></li>
+								<li><a href="#">Horario 3º ano B</a></li>
+								<li><a href="#">Horario 3º ano C</a></li>
+								<li><a href="#">Horario 3º ano D</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Horario 4º ano</a>
+							<ul>
+								<li><a href="#">Horario 4º ano A</a></li>
+								<li><a href="#">Horario 4º ano B</a></li>
+								<li><a href="#">Horario 4º ano C</a></li>
+								<li><a href="#">Horario 4º ano D</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Horario 5º ano</a>
+							<ul>
+								<li><a href="#">Horario 5º ano A</a></li>
+								<li><a href="#">Horario 5º ano B</a></li>
+								<li><a href="#">Horario 5º ano C</a></li>
+								<li><a href="#">Horario 5º ano D</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Horario 6º ano</a>
+							<ul>
+								<li><a href="#">Horario 6º ano A</a></li>
+								<li><a href="#">Horario 6º ano B</a></li>
+								<li><a href="#">Horario 6º ano C</a></li>
+								<li><a href="#">Horario 6º ano D</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</section>
 	</div>
-	<div>
-		<img src="https://pixabay.com/get/g9c2caf49c2bb803bc1c6325a4b45d2066afb1f3bf6f1ef133f40a00e092c014018ba06a670b1fab80826b9abb30f43e19e5ace69a44c61274223aba0ffc33387_1920.jpg" id="img-perfil">
-		<h1>Dr. Matheus</h1>
-	</div>
-	<div class="informacao">
-		<h2>Bem-Vindo(a)</h2>
-		<span>Site Em Construção!</span>
-		<p>Aproveite e dê uma olhadinha em minhas redes socias:</p>
+	<div class="Salas-campo">
+		<section>
+			<span class="title-clases" id="title-turmas-span">Salas:</span>
 
+			<div class="salas-campo">
 
-		<a href="#"><img src="https://cdn.icon-icons.com/icons2/2066/PNG/512/instagram_icon_125245.png" id="icon-insta" class="png"></a>
-		<a href="#"><img src="https://img.icons8.com/ios/500/facebook-new.png" class="png" id="icon-face"></a>
-		<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/160/160200.png" class="png" id="icon-whats"></a>
+				<ul>
+					<li><a href="#">Sala 01</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+					<li><a href="#">Sala 02</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+					<li><a href="#">Sala 03</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+					<li><a href="#">Sala 04</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+					<li><a href="#">Sala 05</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+					<li><a href="#">Sala 06</a>
+						<ul><a href="#"></a>
+							
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
