@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="style.css">
 	<style>
 		*{
 			margin: 0;
@@ -12,254 +12,68 @@
 			box-sizing: border-box;
 		}
 		body{
-			background-color: rgb(31, 31, 31);
+			background-color: rgb(218, 216, 216);
 		}
 		header{
 			width: 100%;
 			height: 80px;
-			background-color: #ccc;
-			padding-top: 1.5rem;
+			background-color: rgb(218, 216, 216);
 		}
-		#title-h2-art{
-			font-size: 20pt;
+		#marca-name{
+			font-size: 10pt;
 			font-family: Arial, Helvetica, sans-serif;
-			color: white;
-			text-align: center;
-			display: block;
-			margin: 1rem;
-		}
-		#text-h1-header{
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 20pt;
-			display: block;
-			text-align: center;
-		}
-		#title-turmas-span{
-			font-size: 20pt;
-			font-family: Arial, Helvetica, sans-serif;
-			color: rgb(255, 255, 255);
-			margin-left: 1rem;
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-			display: block;
-		}
-		ul{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			width: 170px;
-		}
-		ul li{
-			position: relative;
-		}
-
-		li ul {
-			position: absolute;
-			left: 170px;
-			top: 0;
-			display: none;
-		}
-
-		ul li a {
-			display: block;
-			text-decoration: none;
+			font-weight: bold;
+			letter-spacing: 5px;
 			color: black;
-			background-color: #ccc;
-			padding: 10px;
-			border: 1px solid #aaa;
-			height: 50px;
+			text-align: center;
+			display: block;
+			margin-top: 1rem;
 		}
-
-		li:hover ul {
+		#icon-produto{
+			width: 250px;
+			height: auto;
+			display: block;
+			margin-left: 55px;
+			margin-top: 1rem;
+			position: absolute;
+			z-index: 99;
+		}
+		.corte{
+			width: 150%;
+			height: calc(100vh - 80px);
+			background-color: white;
+			transform: rotate(-10deg);
+			margin-top: 8rem;
+			margin-left: -3rem;
 			display: block;
 		}
-
-		.turmas{
+		#title-produto{
+			color: rgb(26, 26, 26);
+			position: absolute;
+			z-index: 99;
+			font-size: 20pt;
+			font-family: sans-serif;
+			display: block;
+			margin-left: 12rem;
+			letter-spacing: 5px;
+			transform: rotate(10deg);
 			margin-top: 2rem;
-			margin-left: 1rem;
-		}
-
-		.salas-campo{
-			margin-left: 1rem;
-
-		}
-		
-		.materias{
-			margin-left: 1rem;
+			padding-bottom: 7px;
+			border-bottom: 3px solid black;
 		}
 	</style>
-	<title>Olinda De Paula Magalhães</title>
+	<title>My Money</title>
 </head>
 <body>
 	<header>
-		<h1 class="h1-header" id="text-h1-header">Olinda De Paula Magalhães</h1>
+		<span id="marca-name">AINT PLASTIC</span>
+		<img src="https://static.tecfit.store/public/tecfit/imagens/produtos/tenis-nike-zoom-winflo-6-tam-39-44-39-5480.png" id="icon-produto">
 	</header>
-	<article>
-		<h2 id="title-h2-art">Horarios e Salas</h2>
-	</article>
-	<div class="clases-turmas">
-		<section>
-			<span class="title-clases" id="title-turmas-span">Turmas:</span>
-			<nav>
-				<div class="turmas">
-					<ul>
-						<li><a>Horario 1º ano</a>
-							<ul>
-								<li><a href="#">Horario 1º ano A</a></li>
-								<li><a href="#">Horario 1º ano B</a></li>
-								<li><a href="#">Horario 1º ano C</a></li>
-								<li><a href="#">Horario 1º ano D</a></li>
-							</ul>
-						</li>
-						<li><a>Horario 2º ano</a>
-							<ul>
-								<li><a href="#">Horario 2º ano A</a></li>
-								<li><a href="#">Horario 2º ano B</a></li>
-								<li><a href="#">Horario 2º ano C</a></li>
-								<li><a href="#">Horario 2º ano D</a></li>
-							</ul>
-						</li>
-						<li><a>Horario 3º ano</a>
-							<ul>
-								<li><a href="#">Horario 3º ano A</a></li>
-								<li><a href="#">Horario 3º ano B</a></li>
-								<li><a href="#">Horario 3º ano C</a></li>
-								<li><a href="#">Horario 3º ano D</a></li>
-							</ul>
-						</li>
-						<li><a>Horario 4º ano</a>
-							<ul>
-								<li><a href="#">Horario 4º ano A</a></li>
-								<li><a href="#">Horario 4º ano B</a></li>
-								<li><a href="#">Horario 4º ano C</a></li>
-								<li><a href="#">Horario 4º ano D</a></li>
-							</ul>
-						</li>
-						<li><a>Horario 5º ano</a>
-							<ul>
-								<li><a href="#">Horario 5º ano A</a></li>
-								<li><a href="#">Horario 5º ano B</a></li>
-								<li><a href="#">Horario 5º ano C</a></li>
-								<li><a href="#">Horario 5º ano D</a></li>
-							</ul>
-						</li>
-						<li><a>Horario 6º ano</a>
-							<ul>
-								<li><a href="#">Horario 6º ano A</a></li>
-								<li><a href="#">Horario 6º ano B</a></li>
-								<li><a href="#">Horario 6º ano C</a></li>
-								<li><a href="#">Horario 6º ano D</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</section>
-	</div>
-	<div class="Salas-campo">
-		<section>
-			<span class="title-clases" id="title-turmas-span">Salas:</span>
+	<section>
+		<div class="corte">
+			<h1 id="title-produto">Novo</h1>
+		</div>
 
-			<div class="salas-campo">
-
-				<ul>
-					<li><a>Sala 01</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 01:</a>
-							<li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-					<li><a>Sala 02</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 02:</a>
-							<li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-					<li><a>Sala 03</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 03:</a>
-							<li><a href="#">Lucas</a></li><li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-					<li><a>Sala 04</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 04:</a>
-							<li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-					<li><a >Sala 05</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 05:</a>
-							<li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-					<li><a>Sala 06</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;" href="#">Alunos da sala 06:</a>
-							<li><a href="#">Lucas</a></li>
-							<li><a href="#">Eduardo</a></li>
-							<li><a href="#">Maria</a></li>
-							<li><a href="#">Mirela</a></li>
-							<li><a href="#">João</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</div>
-	<div class="materia-campo">
-		<section>
-			<span class="title-clases" id="title-turmas-span">Materias:</span>
-
-			<div class="materias">
-				<ul>
-					<li><a>Português</a>
-						<ul><a style="background-color: rgb(78, 78, 78); border: none; color: white;">Professor(a)</a>
-							<li><a href="#">Fernanda Nelis</a></li>
-							<li><a href="#">Bruno Costa</a></li>
-						</ul>
-					</li>
-					<li><a>Matematica</a>
-						<ul><a  style="background-color: rgb(78, 78, 78); border: none; color: white;">Professor:</a>
-							<li><a href="#">Roberto Silva</a></li>
-							<li><a href="#">Elma Souza</a></li>
-						</ul>
-					</li>
-					<li><a>Geografia</a>
-						<ul><a  style="background-color: rgb(78, 78, 78); border: none; color: white;">Professor:</a>
-							<li><a href="#">Roberto Silva</a></li>
-							<li><a href="#">Elma Souza</a></li>
-						</ul>
-					</li>
-					<li><a>Quimica</a>
-						<ul><a  style="background-color: rgb(78, 78, 78); border: none; color: white;">Professor:</a>
-							<li><a href="#">Roberto Silva</a></li>
-							<li><a href="#">Elma Souza</a></li>
-						</ul>
-					</li>
-					<li><a>Biologia</a>
-						<ul><a  style="background-color: rgb(78, 78, 78); border: none; color: white;">Professor:</a>
-							<li><a href="#">Roberto Silva</a></li>
-							<li><a href="#">Elma Souza</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</div>
+	</section>
 </body>
 </html>
