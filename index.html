@@ -12,80 +12,87 @@
 			box-sizing: border-box;
 		}
 		body{
-			background-color: rgb(218, 216, 216);
+			background-color: rgb(124, 124, 124);
 		}
-		header{
-			width: 100%;
-			height: 80px;
-			background-color: rgb(218, 216, 216);
-		}
-		#marca-name{
-			font-size: 10pt;
-			font-family: Arial, Helvetica, sans-serif;
-			font-weight: bold;
-			letter-spacing: 5px;
-			color: black;
-			text-align: center;
-			display: block;
-			margin-top: 1rem;
-		}
-		#icon-produto{
-			width: 250px;
-			height: auto;
-			display: block;
-			margin-left: 55px;
-			margin-top: 1rem;
-			position: absolute;
+		#bateria{
+			width: 20px;
+			height: 20px;
 			float: right;
-			z-index: 99;
-		}
-		.corte{
-			width: 150%;
-			height: 59vh;
-			background-color: white;
-			transform: rotate(0deg);
 			display: block;
+			margin-right: .8rem;
+		}
+		#wifi{
+			width: 16px;
+			height: 16px;
+			display: block;
+			margin-left: 2.5rem;
+			margin-top: .2rem;
+		}
+		.mais-conteudo{
+			width: 100%;
+			height: 60vh;
+			background-color: rgb(199, 197, 197);
+			margin-top: 13rem;
+		}
+		#car{
+			width: 350px;
+			height: auto;
+			position: absolute;
+			margin-top: 7rem;
+			display: block;
+			margin-left: -1.5rem;
+		}
+
+		#bateria-car{
+			width: 40px;
+			height: auto;
+			transform: rotate(-90deg);
+			margin-top: 10rem;
+			margin-left: -.5rem;
 			position: absolute;
 		}
-		#title-produto{
-			color: rgb(26, 26, 26);
+		#gps{
+			width: 15px;
+			height: auto;
+			margin-top: -.8rem;
+			margin-left: 1rem;
+			display: block;
+		}
+		span{
 			position: absolute;
-			z-index: 99;
 			font-size: 20pt;
-			font-family: sans-serif;
-			display: block;
-			text-align: center;
-			transform: rotate(0deg);
-			letter-spacing: 5px;
-			margin-top: 2rem;
-			padding-bottom: 7px;
-			border-bottom: 3px solid black;
-		}
-		button{
-			position: absolute;
-			display: block;
-			background-color: rgb(155, 154, 154);
+			font-family: Arial, Helvetica, sans-serif;
+			margin-left: 35vw;
 			color: white;
-			width: 160px;
-			height: 40px;
-			margin-top: 20rem;
-			margin-left: 10rem;
-			border: none;
-			z-index: 99;
+		}
+		h1{
+			font-size: 30pt;
+			font-family: Arial, Helvetica, sans-serif;
+			position: absolute;
+			margin-left: 38vw;
+			margin-top: 5rem;
+			display: block;
+			color: white;
 		}
 	</style>
-	<title>My Money</title>
+	<title>Document</title>
 </head>
 <body>
-	<header>
-		<span id="marca-name">AINT PLASTIC</span>
-		<img src="https://static.tecfit.store/public/tecfit/imagens/produtos/tenis-nike-zoom-winflo-6-tam-39-44-39-5480.png" id="icon-produto">
+	
+	<header class="cabecalho">
+		<img src="https://cdn-icons-png.flaticon.com/512/35/35237.png" id="bateria">
+		<img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" id="wifi">
+		<img src="https://image.flaticon.com/icons/png/512/83/83937.png" id="gps">
+		<h1>70%</h1>
+		<img src="https://images.vexels.com/media/users/3/153144/isolated/preview/3252e1b63c0ac6976f4fc3a9905bad3e-icone-de-bateria-completa.png" alt="" id="bateria-car">
 	</header>
+	<div class="informa">
+		<img src="https://media.volkswagen.com/vw-BU3-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AGiyyJ1vTvsd2SlppEKhjTtKSK8CqC3MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnagyyJ8H3WDZ4HvCJii8sGeIoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hT9zzSAly3QGE0q2TwPP7m3sOXjO2mf2GKl0dfzMKV700YblUPxYvEp3xLLylx1WtxA288xSDYjjBd9KyyTopJmmWDJnppGRRdwwJthR77l54%25CCEFlYRRVjqOrrXfCg66t%25srNN5etmqq9BSaAAZ78pSSiDR4eeft42oo2JiO%25%25nM%25qDDuPqiaa058211FGFM88xTD3jjBjwcyyTy8KmmWs6bppGQQ%25wwJE1V77l8JjCCE4JvRRVGnBrrXm7p66tVdlNN52Nmqq979IAAZJvwSSiDLceefbigoo2BPo%25%25nNJjDDujexaa0bpf11FOBZ88xZFHjjB3KvyyTPBKmmWIHappGXqLwwJacf77l5UXCCEMktRRVqEXrrXL5966tzFFNN5dpSqq9MtIAAZCq2SSiRTbeefGrhoo2ya0%25%25nT1KDDuqExaa0y8N11FJUh88xqHkjjBj9KyyT%251LmmWDjFppGJlvwwJU5V77lCmcCCEjk0RRViRsrrXt%25966tT7wNN5Kx4qq9%251IAAZH%25RSSiDWEeefrPDoo2KUg%25%25nTTqDDuPwkaa0mcf11FXOX88xPUojjBjd%25yyTyG2mmWVCxppGsTEwwJwXL77l4JnCCECmYRRVuRUrrXmAP66tpHWNN5WKjqq9B6PAAZ7TQSSiKRseefFQuoo2VPQ%25%25nM1zDDuNIkaa0qog11Fb5a88xlRdjjBd8qyyTf1WmmWINSppGtGv&width=864" id="car">
+	</div>
 	<section>
-		<div class="corte">
-			<h1 id="title-produto">Novo</h1>
-			<button>Comprar</button>
+		<div class="mais-conteudo">
 		</div>
 	</section>
+
 </body>
 </html>
