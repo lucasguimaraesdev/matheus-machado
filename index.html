@@ -1,98 +1,260 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/style.css">
 	<style>
 		*{
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
 		}
 		body{
-			background-color: rgb(124, 124, 124);
+			background-color: white;
 		}
-		#bateria{
+		
+		#serch--png{
 			width: 20px;
-			height: 20px;
 			float: right;
-			display: block;
-			margin-right: .8rem;
-		}
-		#wifi{
-			width: 16px;
-			height: 16px;
-			display: block;
-			margin-left: 2.5rem;
-			margin-top: .2rem;
-		}
-		.mais-conteudo{
-			width: 100%;
-			height: 60vh;
-			background-color: rgb(199, 197, 197);
-			margin-top: 13rem;
-		}
-		#car{
-			width: 350px;
+			top: 10%;
+			right: 30%;
 			height: auto;
 			position: absolute;
-			margin-top: 7rem;
-			display: block;
-			margin-left: -1.5rem;
 		}
-
-		#bateria-car{
-			width: 40px;
+		#filter--png{
+			width: 20px;
+			float: right;
 			height: auto;
-			transform: rotate(-90deg);
-			margin-top: 10rem;
-			margin-left: -.5rem;
+			top: 10%;
 			position: absolute;
+			left: 75%;
 		}
-		#gps{
-			width: 15px;
+		#number--png{
+			width: 20px;
 			height: auto;
-			margin-top: -.8rem;
-			margin-left: 1rem;
-			display: block;
-		}
-		span{
+			float: right;
+			top: 10%;
 			position: absolute;
+			left: 85%;
+		}
+		
+		#title--principal{
+			position: absolute;
+			top: 20%;
+			left: 10%;
 			font-size: 20pt;
 			font-family: Arial, Helvetica, sans-serif;
-			margin-left: 35vw;
-			color: white;
+			letter-spacing: 2px;
 		}
-		h1{
-			font-size: 30pt;
-			font-family: Arial, Helvetica, sans-serif;
+		
+		
+		.content{
+			width: 180px;
+			height: 110px;
+			background-color: #ccc;
 			position: absolute;
-			margin-left: 38vw;
-			margin-top: 5rem;
+			top: 40%;
+			left: 7%;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+		}
+		.content2{
+			width: 180px;
+			height: 110px;
+			background-color: #ccc;
+			position: absolute;
+			top: 65%;
+			left: 7%;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+		}
+		.content3{
+			width: 180px;
+			height: 110px;
+			background-color: #ccc;
+			position: absolute;
+			top: 89%;
+			left: 7%;
+			border-radius: 20px;
+			display: flex;
+			align-items: center;
+		}
+		
+		.produto--1{
+			position: absolute;
+			top: 45%;
+			z-index: 99;
+			left: 62%;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11pt;
+			font-weight: bold;
+		}
+		.preço{
+			position: absolute;
+			top: 50%;
+			z-index: 99;
+			left: 62%;
+			font-weight: normal;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.produto--2{
+			position: absolute;
+			top: 70%;
+			z-index: 99;
+			left: 62%;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11pt;
+			font-weight: bold;
+		
+		}
+		.preço--2{
+			position: absolute;
+			top: 75%;
+			z-index: 99;
+			left: 62%;
+			font-weight: normal;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.produto--3{
+			position: absolute;
+			top: 95%;
+			z-index: 99;
+			left: 62%;
+			
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 11pt;
+			font-weight: bold;
+		}
+		.preço--3{
+			position: absolute;
+			top: 100%;
+			z-index: 99;
+			left: 62%;
+			font-weight: normal;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.number--compra1{
+			position: absolute;
+			top: 50%;
+			left: 90%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			color: rgb(168, 168, 168);
+		}
+		.number--compra2{
+			position: absolute;
+			top: 75%;
+			left: 90%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			color: rgb(168, 168, 168);
+		}
+		.number--compra3{
+			position: absolute;
+			top: 100%;
+			left: 90%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			color: rgb(168, 168, 168);
+		}
+		
+		.total--buy{
+			position: absolute;
+			top: 120%;
+			bottom: 10%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bolder;
+			color: rgb(133, 133, 133);
+			font-size: 15pt;
+			letter-spacing: 2px;
+			left: 7%;
+		}
+		.total--money{
+			position: absolute;
+			top: 120%;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bolder;
+			left: 70%;
+		}
+		
+		.btn{
+			position: absolute;
+			top: 130%;
+			left: 20%;
 			display: block;
+			width: 200px;
+			height: 40px;
+			background-color: black;
+			border: none;
 			color: white;
+			border-radius: 20px;
+		}
+		
+		#item--1{
+			width: 90px;
+			height: auto;
+			position: absolute;
+			left: 10%;
+		}
+		
+		#item--2{
+			width: 90px;
+			height: auto;
+			position: absolute;
+			left: 10%;
+		}
+		#item--3{
+			width: 140px;
+			height: auto;
+			left: 10%;
+			position: absolute;
 		}
 	</style>
-	<title>Document</title>
+	<title>Meu carrinho</title>
 </head>
 <body>
 	
-	<header class="cabecalho">
-		<img src="https://cdn-icons-png.flaticon.com/512/35/35237.png" id="bateria">
-		<img src="https://cdn-icons-png.flaticon.com/512/93/93158.png" id="wifi">
-		<img src="https://image.flaticon.com/icons/png/512/83/83937.png" id="gps">
-		<h1>70%</h1>
-		<img src="https://images.vexels.com/media/users/3/153144/isolated/preview/3252e1b63c0ac6976f4fc3a9905bad3e-icone-de-bateria-completa.png" alt="" id="bateria-car">
-	</header>
-	<div class="informa">
-		<img src="https://media.volkswagen.com/vw-BU3-my2021/iris?COSY-EU-100-1713VV%25lXm0kYNazzSU9mu0fO7AGiyyJ1vTvsd2SlppEKhjTtKSK8CqC3MM8H2Lvyr0Q%25UOVggAa5hP4KYwqeQeOOnagyyJ8H3WDZ4HvCJii8sGeIoo0gZrnZlO4O6bLKKFNMbTggAcEvvFHOu5ZxxHlZkPF%25uAnW07ZZU8pVfp4ExIIrsJYU001bXUUNyEPg3aaBegS8hT9zzSAly3QGE0q2TwPP7m3sOXjO2mf2GKl0dfzMKV700YblUPxYvEp3xLLylx1WtxA288xSDYjjBd9KyyTopJmmWDJnppGRRdwwJthR77l54%25CCEFlYRRVjqOrrXfCg66t%25srNN5etmqq9BSaAAZ78pSSiDR4eeft42oo2JiO%25%25nM%25qDDuPqiaa058211FGFM88xTD3jjBjwcyyTy8KmmWs6bppGQQ%25wwJE1V77l8JjCCE4JvRRVGnBrrXm7p66tVdlNN52Nmqq979IAAZJvwSSiDLceefbigoo2BPo%25%25nNJjDDujexaa0bpf11FOBZ88xZFHjjB3KvyyTPBKmmWIHappGXqLwwJacf77l5UXCCEMktRRVqEXrrXL5966tzFFNN5dpSqq9MtIAAZCq2SSiRTbeefGrhoo2ya0%25%25nT1KDDuqExaa0y8N11FJUh88xqHkjjBj9KyyT%251LmmWDjFppGJlvwwJU5V77lCmcCCEjk0RRViRsrrXt%25966tT7wNN5Kx4qq9%251IAAZH%25RSSiDWEeefrPDoo2KUg%25%25nTTqDDuPwkaa0mcf11FXOX88xPUojjBjd%25yyTyG2mmWVCxppGsTEwwJwXL77l4JnCCECmYRRVuRUrrXmAP66tpHWNN5WKjqq9B6PAAZ7TQSSiKRseefFQuoo2VPQ%25%25nM1zDDuNIkaa0qog11Fb5a88xlRdjjBd8qyyTf1WmmWINSppGtGv&width=864" id="car">
-	</div>
-	<section>
-		<div class="mais-conteudo">
-		</div>
-	</section>
+	<header>
+		<div class="icones">
+			<img src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icone-de-pesquisa.png" id="serch--png">
 
+			<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAHlBMVEX///8AAACVlZXv7++ampoaGhqdnZ339/fOzs6QkJBI6+E1AAAA3UlEQVR4nO3cSw7CMAxF0TaUfva/YaZIMLFUYTucs4Lc6ZOVZQEAAAAAAAAA+Jkxu2WdncL+FPansD+F/SnsT2F/CvtT2J/C/hT2p7C/PyjcZpc9uQMAAAAAAAAAUcejouPGwm191rPeeWYxso9ivhoKFSpMp1ChwnwKFSrMp1ChwnwKFSrMp1Dhu/n30vk3bwAAAAAAAACgs3MEv/sdZ/aTg7bwdUy3L433cOGe/eQghQrrU6iwPoUK61OosD6FCutTqLA+hQrrm39NPK8Rc3VbhAEAAAAAAAAAPr0A0kI4ighOvVwAAAAASUVORK5CYII=" id="filter--png">
+
+			<img src="https://w7.pngwing.com/pngs/689/739/png-transparent-circle-logo-number-brand.png" id="number--png">
+		</div>
+	</header>
+	<main>
+		<h1 id="title--principal">Meu Carrinho</h1>
+		<span class="produto--1">Nike Air Max 97</span>
+		<span class="preço">R$ 299,00</span>
+		<p class="number--compra1"> x1</p>
+		<div class="content">
+			<img src="https://cdn.dooca.store/2452/products/fdf-removebg-preview.png?v=1616433274" id="item--1">
+		</div>
+		<span class="produto--2">Nike React</span>
+		<span class="preço--2">R$ 99,00</span>
+		<p class="number--compra2"> x1</p>
+		<div class="content2">
+			<img src="https://gfx.r-gol.com/media/res/products/17/134017/nike-react-gato-ct0550-018_1.png" id="item--2">
+		</div>
+		<span class="produto--3">Nike Air Force 1</span>
+		<span class="preço--3">R$ 110,00</span>
+		<p class="number--compra3"> x1</p>
+		<div class="content3">
+			<img src="https://images.lojanike.com.br/1024x1024/produto/tenis-nike-air-force-1-07-premium-just-do-it-masculino-AR7719-100-1.png"id="item--3">
+		</div>
+		<span class="total--buy">Total</span>
+		<span class="total--money">R$508,00</span>
+		<div class="buy--btn">
+			<button class="btn">Comparar tudo</button>
+		</div>
+	</main>
 </body>
 </html>
